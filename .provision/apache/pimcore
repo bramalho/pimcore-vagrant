@@ -1,0 +1,19 @@
+<VirtualHost *:80>
+    DocumentRoot "/var/www"
+    ServerName localhost
+</VirtualHost>
+<Directory "/var/www">
+    Require all granted
+    Require local
+    AllowOverride All
+</Directory>
+
+<VirtualHost *:80>
+    DocumentRoot "/var/www/pimcore/web"
+    ServerName pimcore.local
+</VirtualHost>
+<Directory "/var/www/pimcore/web">
+    Require all granted
+    Require local
+    AllowOverride All
+</Directory>
