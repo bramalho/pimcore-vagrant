@@ -34,7 +34,7 @@ Copy the `.provision/config/installer.yml` file to `app/config/installer.yml` an
 ./vendor/bin/pimcore-install
 ```
 
-Add project to host
+Add project to hosts
 ```bash
 sudo vim /etc/hosts
 ```
