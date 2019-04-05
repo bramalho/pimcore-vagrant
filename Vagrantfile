@@ -17,7 +17,7 @@ Vagrant.configure("2") do |config|
   config.vm.provider "virtualbox" do |vb|
      vb.memory = "4096"
      vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
-     vb.customize ["modifyvm", :id, "--uartmode1", "disconnected" ]
+     vb.customize ["modifyvm", :id, "--uartmode1", "disconnected"] #remove this if machine is too slow
   end
 
 end
