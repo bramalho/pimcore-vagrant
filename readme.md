@@ -40,11 +40,11 @@ sudo vim /etc/hosts
 ```
 
 ## Access Remote Database
-Host: *192.168.10.10*
-Port: *3306*
-Username: *pimcore*
-Password: *pimcore*
-Databse: *pimcore*
+- Host: *192.168.10.10*
+- Port: *3306*
+- Username: *pimcore*
+- Password: *pimcore*
+- Databse: *pimcore*
 
 ## Fix Session
 Copy the `.provision/configs/session.yml` file to `pimcore/app/config/local/configs/session.yml`
