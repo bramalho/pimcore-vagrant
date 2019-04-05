@@ -27,8 +27,11 @@ cd /var/www
 COMPOSER_MEMORY_LIMIT=-1 composer create-project pimcore/skeleton:dev-master pimcore
 
 cd pimcore
+```
 
-./vendor/bin/pimcore-install --mysql-host-socket=db --mysql-username=root --mysql-password=root --mysql-database=pimcore
+Copy the `.provision/config/installer.yml` file to `app/config/installer.yml` and run the installer
+```bash
+./vendor/bin/pimcore-install
 ```
 
 Add project to host
@@ -47,7 +50,7 @@ sudo vim /etc/hosts
 - Databse: *pimcore*
 
 ## Fix Session
-Copy the `.provision/configs/session.yml` file to `pimcore/app/config/local/configs/session.yml`
+Copy the `.provision/config/local/session.yml` file to `pimcore/app/config/local/session.yml`
 
 ## Usage
 - Frontend: [pimcore.local](http://pimcore.local)

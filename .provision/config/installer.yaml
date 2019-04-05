@@ -1,0 +1,8 @@
+pimcore_install:
+    parameters:
+        database_credentials:
+            user: root
+            password: root
+            dbname: pimcore
+            host: 127.0.0.1
+            port: 3306
