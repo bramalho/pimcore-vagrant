@@ -52,6 +52,19 @@ sudo vim /etc/hosts
 ## Fix Session
 Copy the `.provision/config/local/session.yml` file to `pimcore/app/config/local/session.yml`
 
+## Fix Memory Limit
+```bash
+sudo vim /etc/php/7.2/apache2/php.ini
+```
+
+```
+memory_limit = -1
+```
+
+```bash
+sudo service apache2 restart
+```
+
 ## Usage
 - Frontend: [pimcore.local](http://pimcore.local)
 - Backend: [pimcore.local/admin](http://pimcore.local/admin)
